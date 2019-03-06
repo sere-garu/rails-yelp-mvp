@@ -11,9 +11,17 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-<div class="container">
   <body>
-    <%= yield %>
+    <header class="navbar-wagon">
+      <span class="navbar-wagon-right">
+        <%= link_to 'Home', restaurants_path %>
+      </span>
+      <span class="navbar-wagon-right">
+        <%= link_to 'Add', new_restaurant_path %>
+      </span>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
-</div>
 </html>

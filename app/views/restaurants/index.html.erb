@@ -6,5 +6,6 @@
   <% @restaurants.each do |restaurant| %>
   <h2><%= restaurant.name %></h2>
   <p><%= restaurant.category %></p>
+  <%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary" %>
   <% end %>
 
